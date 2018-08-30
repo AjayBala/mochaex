@@ -1,0 +1,117 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.checkBoxText {
+    display: inline-block;
+    padding: 0 10px 0 18px;
+    border-right: 1px solid var(--color-gray-8);
+    height: 320px;
+    overflow-y: auto;
+    float: left;
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &:nth-child(3) {
+        border-right: none;
+    }
+    
+    & .filterLabel {
+        font-size: 16px;
+        color: var(--color-gray-7);
+        margin-bottom: 15px;
+    }
+
+    & h1 {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-gray-7);
+        margin: 0 0 15px 8px;
+    }
+
+    & label {
+        &:before {
+            border: 2px solid var(--color-seconday-turquoise);
+        }
+    }
+    
+    & input[type='checkbox'] {
+        &:checked {
+            & + label {
+                &:before {
+                    background-color: var(--color-seconday-turquoise);
+                    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                }
+    
+                &:after {
+                    border-color: var(--color-white);
+                }
+            }
+        }
+    }
+}
+
+    .filterContent {
+        width: 712px;
+        background-color: var(--color-white);
+        box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.5);
+        position: absolute;
+        right: 1px;
+        top: 30px;
+        text-align: left;
+        padding:20px 0px 25px 0;
+        font-weight: normal;
+        font-family: var(--open-sans);
+        z-index: 10;
+        height: 440px;
+
+        &:last-child {
+            border: none;
+        }
+
+        &:before, &:after {
+            bottom: 100%;
+            right: 15px;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+
+        &:after {
+            border-bottom-color: var(--color-white);
+            border-width: 10px;
+        }
+
+        &:before {
+            border-bottom-color: var(--color-white);
+            border-width: 10px;
+        }
+
+        & .filterByType {
+            width: 330px;
+        }
+
+        & .filterByStatus {
+            width: 185px;
+        }
+
+        & .filterByPriority {
+            width: 174px;
+        }
+
+        & .filterButtons {
+            text-align: right;
+            margin: 25px 24px 0 0;
+            float: right;
+
+            & .applyFilterBtn {
+                width: 176px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+}

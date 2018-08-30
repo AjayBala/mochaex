@@ -1,0 +1,62 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.alertContent {
+    position: absolute;
+    width: 336px;
+    background: var(--color-white);
+    top: 75px;
+    right: 35px;
+    box-shadow: 0 4px 8px 0 rgba(28, 32, 36, 0.5);
+    z-index: 9;
+    font-family: var(--open-sans);
+    height: 180px;
+    overflow-y: auto;
+
+    & ul.alert {
+        padding: 0;
+        margin: 0;
+        text-align: left;
+
+        & li {
+            border-bottom: 1px solid var(--color-gray-8);
+            padding: 8px 16px 10px;
+            color: var(--color-gray-7);
+            width: 100%;
+            cursor: auto;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            & a {
+                color: var(--color-seconday-turquoise);
+                text-decoration: none;
+                font-size: 14px;
+                display: block;
+                font-weight: normal;
+                margin-top: 2px;
+
+                &:hover {
+                    color: var(--color-seconday-turquoise);
+                }
+            }
+            
+            & .alertLabel, & .alertLabelRed {
+                display: inline-block;
+                font: bold 14px var(--open-sans);
+
+            }
+
+            & .alertLabelRed {
+                color: var(--color-branded);
+            }
+            & .alertTime {
+                float: right;
+                font-size: 14px;
+                color: var(--color-gray-7);
+            }
+            
+        }
+    }
+}

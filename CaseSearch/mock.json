@@ -1,0 +1,123 @@
+{   "quickFilterCaseCount": [
+    { "key": "X-EXPIRE-TMRW-COUNT", "displayValue": "Expire Tmrw", "paramKey": "case.expiry", "value": 1 },
+    { "key": "X-EXPIRE-TODAY-COUNT", "displayValue": "Expire Today", "paramKey": "case.expiry", "value": 0 },
+    { "key": "X-EXTENDED-COUNT", "displayValue": "Extended", "paramKey": "case.extension", "value": 1 }
+],
+        "count": 10,
+        "errorMessage": "No Data fount",
+        "filterResults":{
+            "selectedFilterResults": {}
+        },
+       "cases":[  
+          {  
+             "caseId":20171220000062,   
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"High",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000062"
+          },
+          {  
+             "caseId":20171220000067,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Low",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000067"
+          },
+          {  
+             "caseId":20171220000066,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Medium",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000066"
+          },
+          {  
+             "caseId":20171220000059,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"High",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000059"
+          },
+          {  
+             "caseId":20171220000060,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Low",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000060"
+          },
+          {  
+             "caseId":20171220000061,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"High",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000061"
+          },
+          {  
+             "caseId":20171220000063,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Low",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000063"
+          },
+          {  
+             "caseId":20171220000064,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Medium",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000064"
+          },
+          {  
+             "caseId":20171220000065,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"Low",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000065"
+          },
+          {  
+             "caseId":20171220000049,
+             "caseType":"24HR Cancel",
+             "createdDate":"20-05-17",
+             "age":"222 DAYS 2 HOURS ",
+             "priority":"High",
+             "caseStatus":"Closed",
+             "extensionStatus":"0",
+             "releaseDate":"22-12-17",
+             "href":"/cases/20171220000049"
+          }
+       ]
+    }

@@ -1,0 +1,249 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import "fusion-core-components/lib/assets/styles/grid/grid.css";
+@import 'fusion-core-components/lib/assets/styles/fonts/fonts.css';
+
+.paginationContainer {
+    width: 100%;
+    display: block;
+    position: relative;
+    background: none;
+    padding: 25px 0 0 0;
+    font: 16px/24px var(--open-sans);
+
+    @media (--viewport-sm) {
+        padding: 16px 0px;
+    }
+
+        & .boldText {
+            color: var(--color-gray-7);
+            font-weight: bold;
+            position: relative;
+            top: -4px;
+        }
+
+        & .dropdownPageCount {
+            position: relative;
+            top: -4px;
+            display: inline-block;
+        }
+
+        & .paginationSection {
+            display: inline-block;
+
+            @media (--viewport-sm) {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        & .pager {
+            float: right;
+
+            @media (--viewport-sm) {
+                margin-top: 12px;
+                float: none;
+            }
+        }
+
+        & .center, & .left, & .pagerright {
+            float: none;
+            display: block;
+        }
+
+        & .center {
+            text-align: center;
+
+            & .paginationRight, & .paginationLeft {
+                text-align: center;
+            }
+        }
+
+        & .left {
+            text-align: left;
+
+            & .paginationRight,& .paginationLeft {
+                text-align: left;
+            }
+        }
+
+    & .right {
+        text-align: right;
+
+        & .paginationRight,& .paginationLeft {
+            text-align: right;
+        }
+    }
+
+    & .paginationRight {
+        text-align: right;
+        padding-bottom: 8px;
+    }
+
+    & .paginationLeft {
+        text-align: left;
+        line-height: 36px;
+
+        @media (--viewport-sm) {
+            line-height: 24px;
+        }
+    }
+
+    @media screen and (--viewport-sm) {
+        & .paginationRight {
+            text-align: center;
+        }
+
+        & .paginationLeft {
+            text-align: center;
+        }
+    }
+
+    & .navigateIcon {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        color: var(--color-seconday-turquoise);
+        pointer-events: all;
+        position: relative;
+        top: -4px;
+    }
+    & .navigateIconDisabled {
+        opacity: 0.2;
+    }
+    & .dropdownContainer {
+        padding: 0 8px 0 8px;
+
+        @media (--viewport-sm) {
+            padding: 0 16px 0 16px;
+        }
+
+        display: inline-block;
+    }
+
+    & .nextNavigation {
+        padding-left: 8px;
+    }
+
+    & .prevNavigation {
+        padding-right: 8px;
+    }
+
+    & .dropdownMain {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        width: 90px;
+        background: var(--color-white);
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(83,96,107,.5);
+        border: 1px solid var(--color-gray-3);
+        height: 48px;
+        top: -5px;
+        position: relative;
+        line-height: 43px;
+    }
+
+    & .dropdown {
+        padding-left: 16px;
+        position: relative;
+        display: inline-block;
+
+        &:before {
+            right: 16px;
+            content: "";
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 5px solid #000;
+            position: absolute;
+            top: 50%;
+            margin-top: -2.5px;
+            pointer-events: none;
+        }
+
+        & select {
+            padding: 8px 50px 8px 0;
+        }
+    }
+
+   
+/*** Yoda Dropdown Style Start ***/
+    & .optionsTheme { 
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border-radius: 2px;
+        height: auto;
+        color: var(--color-gray-7);
+        font-style: normal;
+        text-align: center;
+    }
+
+    & .tooltipWrapper {
+        width: 100%;
+    }
+
+    & .dropdown {
+        background: var(--color-white);
+        padding: 5px 10px;
+        margin: 0 10px;
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(83,96,107,.5);
+        border: 1px solid var(--color-gray-3);
+
+        & select {
+            padding: 8px 50px 8px 0;
+        }
+    }
+
+    & .dropdownTheme {
+        width: 100%;
+        text-align: left;
+        padding: 0px 0;
+        max-height: 100px;
+        min-width: 90px;
+        left: -14px;
+    }
+
+    & .optionsTheme {
+        font-size: 16px;
+        font-weight: normal;
+        font-family: var(--open-sans);
+        padding: 4px 16px;
+    }
+
+    & .wrapper {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border: solid 1px var(--color-gray-3);
+        border-radius: 2px;
+        height: 40px;
+        color: var(--color-gray-3);
+        font-style: italic;
+
+        &:after, &:before {
+            display: none;
+    }
+    }
+
+    & .defaultDisplay {
+        width: 93%;
+        padding: 0 16px;
+        font-size: 16px;
+        line-height: 45px;
+
+        @media (--viewport-xl) {
+            width: 95%;
+        }
+    }
+
+    & .tooltip {
+        width: 100%;
+        text-align: left;
+    }
+
+    & .toolContent {
+        width: 100%;
+        text-align: left;
+    }
+
+}

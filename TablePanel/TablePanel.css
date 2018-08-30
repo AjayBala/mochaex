@@ -1,0 +1,100 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+@import '../../assets/styles/base/base.css';
+
+.tableContainer {
+        width: 100%;
+        padding: 16px 20px 16px 16px;
+        font-family: var(--open-sans);
+
+        & table {
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: var(--open-sans);
+            border-radius: 3px;
+            background-color: var(--color-white);
+            box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+            border: solid 1px var(--color-gray-8);
+
+            & tr {
+                background: var(--color-light-whitegray);
+                border-bottom: 1px solid var(--color-gray-8);
+
+                &:nth-child(odd) {
+                    background-color: var(--color-white);
+                }
+
+                &:nth-child(even) {
+                    background-color:rgba(241, 243, 244, 0.3);
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+          }
+              & th {
+                font-size: 12px;
+                color: var(--color-white);
+                font-weight: bold;
+                background-color: var(--color-gray-5);
+                text-align: left;
+                padding: 6px 12px;
+
+                &:first-child{
+                    font-weight: bold;
+                     border-radius: 5px 0px 0 0;
+                    }
+
+                &:last-child {
+                    border-radius: 0px 3px 0 0;
+                }
+
+              }
+
+              & td {
+                font-size: 16px;
+                padding: 10px 12px;
+                color: var(--color-gray-7);
+
+                &:first-child a {
+                    color: var(--color-seconday-turquoise); 
+                    font-weight: bold;
+                }     
+              }       
+          }
+
+          & th.desc,
+          & th.asc {
+            color: var(--color-sky-blue);
+          }
+
+          & th span.desc,
+          & th span.asc {
+            content: "";
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            position: relative;
+            left: 8px;
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            color: var(--color-sky-blue);
+          }
+
+          & th span.desc {
+            border-bottom: 5px solid var(--color-sky-blue);
+            top: -11px;
+          }
+
+          & th span.asc {
+            border-top: 5px solid var(--color-sky-blue);
+            top: 11px;
+          }
+
+}
+
+.pageContainer {
+  background: none;
+  display: block;
+}

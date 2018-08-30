@@ -1,0 +1,183 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.addCaseNoteContent {
+    font-family: var(--open-sans);
+
+    & .addCaseNoteTitle {
+        text-align: center;
+        color: var(--color-gray-7);
+        font: bold 20px/25px var(--main-font);
+    }
+
+    & label {
+        color: var(--color-gray-7);
+        font: bold 14px/27px var(--open-sans);
+    }
+
+    & textarea {
+        width: 100%;
+        height: 96px;
+        border-radius: 2px;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-gray-3);
+        color: var(--color-gray-7);
+        padding: 8px 8px;
+        resize: none;
+        font: 16px/24px var(--open-sans);
+
+        &::placeholder { 
+            font-style: italic; 
+            color: var(--color-gray-7);
+        }
+        
+    }
+     
+    & .error {
+        color: var(--color-primary-brand-red);
+        font: 14px/24px var(--open-sans);
+    }
+  
+    & .addCaseBtn {
+        width: 100%;
+        margin: 10px 0 0;
+        font: bold 14px/24px var(--main-font);
+        height: 40px;
+    } 
+
+    & .duplicateInput {
+        border: 1px solid var(--color-gray-3);
+        color: var(--color-gray-7);
+        padding: 8px 8px;
+        font: 16px/24px var(--open-sans);
+        width: 100%;
+        height: 40px;
+        border-radius: 2px;
+        display: block;
+        margin-bottom: 5px;
+        &::placeholder { 
+            font-style: italic; 
+            color: var(--color-gray-7);
+        }
+    }
+    & .optionsTheme {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border-radius: 2px;
+        height: auto;
+        color: var(--color-gray-7);
+        font-style: normal;
+    }
+
+    & .tooltipWrapper {
+        width: 100%;
+        z-index: auto;
+    }
+
+    & .dropdown {
+        border: 1px solid var(--color-gray-3);
+        border-radius: 5px;
+        box-shadow: -1px 2px 5px var(--color-gray-3);
+        padding-left: 16px;
+        position: relative;
+        background-color: var(--color-white);
+        display: inline-block;
+
+        & select {
+            padding: 8px 50px 8px 0;
+        }
+    }
+
+    & .dropdownTheme {
+        width: 100%;
+        text-align: left;
+        padding: 16px 0;
+        max-height: 250px;
+    }
+
+    & .optionsTheme { 
+        font: 16px/24px var(--open-sans);
+    }
+
+    & .wrapper {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border: 1px solid var(--color-gray-3);
+        border-radius: 2px;
+        height: 40px;
+        color: var(--color-gray-3);
+        font-style: italic;
+        margin-bottom: 5px;
+
+        &:after, &:before {
+            display: none;
+        }
+
+    & .tooltipContainer {
+        width: 100%;
+        z-index: auto;
+
+        & button {
+            width: 100%;
+            height: 40px;
+        }
+    }
+    }
+
+    & .defaultDisplay {
+        width: 87%;
+        padding: 0 16px;
+        font-size: 16px;
+        text-transform: none;
+    }
+
+    & .tooltip {
+        width: 100%;
+        text-align: left;
+    }
+
+    & .toolContent {
+        width: 100%;
+        text-align: left;
+    }
+    
+    & .active {
+        & .defaultDisplay {
+            font-style: normal;
+            color: var(--color-gray-7);
+        }
+    }
+}
+
+.addCaseNoteModal {
+
+    & .storesTablet {
+        max-width: 352px;
+        padding: 6px 15px 14px;
+
+        & button {
+
+            & svg {
+                width: 22px;
+                height: 22px;
+                position: relative;
+                left: 2px;
+                top: -1px;
+            }
+
+            &.tooltip {
+                & svg {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+        }
+
+        & .pdpCustomModalBlock {
+            overflow-y: inherit;
+        }
+    }
+    
+}

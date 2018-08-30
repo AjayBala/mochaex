@@ -1,0 +1,30 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+
+
+.cusAddress {
+    margin: 16px 0 20px;
+    font-family: var(--open-sans);
+
+    & .cusAddTitle {
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-gray-7);
+    }
+    
+    & p {
+        font-size: 16px;
+        color: var(--color-gray-5);
+    }
+}
+
+
+
+ 
+
+
+
+    
+
+   
+
+    

@@ -1,0 +1,238 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.myCase {
+    font-family: var(--open-sans);
+    background: var(--color-gray-0);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    & .caseItemsBody {
+        padding: 0;
+
+        :global(.Loader-loading-event-overlay) {
+                top: 120px;
+                position: fixed;
+        }
+
+        :global(.Loader-loadingImage) {
+                top: 30%;
+        }
+    }
+     & .topMenu {
+        background: var(--color-white);
+        padding: 30px 12px 0 11px;
+        box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+        font-family: var(--open-sans);
+        position: fixed;
+        max-width: 1440px;
+        width: 100%;
+        z-index: 9;
+        top: 44px;
+
+        & ul.myCaseMenu {
+            padding: 0; 
+            margin: 0;
+
+            & .first {
+                border-left: 1px solid var(--color-gray-3);
+            }
+
+            & li {
+                display: inline-block;
+                padding: 0 20px 17px;
+
+                & a {
+                    font-size: 16px;
+                    color: var(--color-gray-5);
+                    text-decoration: none;
+                    padding-bottom: 14px;
+                    
+                    &:hover {
+                        color: var(--color-seconday-turquoise);
+                        border-bottom: 8px solid var(--color-seconday-turquoise);
+                    }
+                }
+
+                &:first-child {
+                    padding: 0 20px 17px 0;
+                }
+                & .active {
+                    border-bottom: 8px solid var(--color-seconday-turquoise);
+                    color: var(--color-primary-turquoise);
+                    font-weight: bold; 
+                }
+            }
+        } 
+
+        & .caseHeaderRgt {
+            text-align: right;
+        }
+    }
+    
+    & .hideTablePanel {
+        display: none;
+
+    }
+
+    & .subMenu {
+        padding: 13px 15px 10px 12px;
+
+        & .box {
+            font-family: var(--open-sans);
+            margin: 4px 0;
+        }
+    }
+
+    & .myCaseBody {
+        width: 100%;
+        padding: 0 16px 16px;
+        font-family: var(--open-sans);
+        min-height: calc(100vh - 250px);
+
+        & .hideTablePanel{
+            display: none;
+        }
+
+        & .noResultFound {
+            text-align: center;
+            padding: 10% 0;
+            font-family: var(--open-sans);
+    
+            & h1 {
+                color: var(--color-gray-5);
+                font-size: 25px;
+            }
+        }
+
+        & .titleContainer {
+            margin: 0 0 10px;
+
+            & .title {
+                color: var(--color-light-black);
+                font: normal bold 24px var(--main-font);
+            }
+        } 
+
+        & .tablePanelSearchContainer {
+            padding: 0;
+
+            & table {
+
+                & tr {
+                    background: var(--color-white);
+                    border-bottom: 1px solid var(--color-gray-8);
+
+                    &:nth-child(odd) {
+                        background-color: var(--color-white);
+                    }
+        
+                    &:nth-child(even) {
+                        background-color: var(--color-gray-0);
+                    }
+        
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    & th {
+                        padding: 3px 12px 3px 12px;
+                    }
+                    
+                    & td {
+                        padding: 12px 12px 12px 12px;
+                    }
+                }
+            }
+        }
+
+        & .tableContainer {
+            width: 100%;
+            padding: 0;
+            
+            & table {
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: var(--open-sans);
+                border-radius: 3px;
+                background-color: var(--color-white);
+                box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+                border: solid 1px var(--color-gray-8);
+
+                & tr {
+                    background: #f8f8f8;
+                    border-bottom: 1px solid var(--color-gray-8);
+
+                    &:nth-child(odd) {
+                        background-color: var(--color-white);
+                    }
+
+                    &:nth-child(even) {
+                        background-color:rgba(241, 243, 244, 0.3);
+                    }
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                }
+
+                & th {
+                    font-size: 12px;
+                    color: var(--color-white);
+                    font-weight: bold;
+                    background-color: var(--color-gray-5);
+                    text-align: left;
+                    padding: 6px 12px;
+
+                    &:first-child {
+                        color: #a8e1ea; 
+                        font-weight: bold; 
+                        border-radius: 5px 0px 0 0;
+                    }
+
+                    &:last-child {
+                        border-radius: 0px 3px 0 0;
+                    }
+                }
+
+                & td {
+                    font-size: 16px;
+                    padding: 10px 12px;
+                    color: var(--color-gray-7);
+
+                    &:first-child {
+                        color: var(--color-seconday-turquoise); 
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    & .paginationDropdown {
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(83,96,107,.5);
+        border: 1px solid var( --color-gray-3);
+        padding-right: 0;
+        background: var(--color-white);
+        height: 48px;
+        line-height: 43px;
+        width: 90px;
+        margin: 16px 10px 0;
+       }
+       
+       :global(.Pagination-dropdownTheme) {
+        width: 100%;
+        text-align: left;
+        max-height: 100px;
+        min-width: 90px;
+        left: -19px;
+        padding: 0px;
+    }
+}
+
+.priorityHigh {
+    color: var(--color-red);
+}

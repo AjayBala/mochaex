@@ -1,0 +1,216 @@
+{  
+   "data":{  
+      "count":73,
+      "searchList":[  
+         {  
+            "caseId":20171220000062,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"10",
+            "releaseDate":"30-12-16",
+            "href":"/cases/20171220000062"
+         },
+         {
+            "caseId":20181220000067,
+            "caseType":"24HR Cancel",
+            "createdDate":"19-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"25-11-17",
+            "href":"/cases/20171220000067"
+         },
+         {  
+            "caseId":20171220000066,
+            "caseType":"24HR Cancel",
+            "createdDate":"19-04-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":[
+                {
+                    "displayKey": "Small",
+                    "value": 1
+                },
+                {
+                    "displayKey": "Large",
+                    "value": 2
+                },
+                {
+                    "displayKey": "XL",
+                    "value": 2
+                }
+            ],
+            "caseStatus":"Closed",
+            "extensionStatus":"5",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000066"
+         },
+         {  
+            "caseId":20171220000059,
+            "caseType":"24HR Cancel",
+            "createdDate":"16-05-18",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000059"
+         },
+         {  
+            "caseId":20171220000060,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000060"
+         },
+         {  
+            "caseId":20171220000061,
+            "caseType":"24HR Open",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000061"
+         },
+         {  
+            "caseId":20181220000063,
+            "caseType":"24HR Cancel",
+            "createdDate":"25-05-16",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000063"
+         },
+         {  
+            "caseId":20171220000064,
+            "caseType":"24HR Cancel",
+            "createdDate":"30-02-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"6",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000064"
+         },
+         {  
+            "caseId":20171220000065,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000065"
+         },
+         {  
+            "caseId":20171220000049,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":[
+                {
+                    "displayKey": "Regular",
+                    "value": 1
+                },
+                {
+                    "displayKey": "Slim",
+                    "value": 2
+                }
+            ],
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000049"
+         },
+         {  
+            "caseId":20171220000080,
+            "caseType":"24HR Progress",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000064"
+         },
+         {  
+            "caseId":20171220000081,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000065"
+         },
+         {  
+            "caseId":20171220000082,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000049"
+         },
+         {  
+            "caseId":20171220000083,
+            "caseType":"24HR Progress",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000064"
+         },
+         {  
+            "caseId":20171220000084,
+            "caseType":"24HR Pending",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000065"
+         },
+         {  
+            "caseId":20171220000085,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000049"
+         },
+         {  
+            "caseId":20171220000086,
+            "caseType":"24HR Cancel",
+            "createdDate":"20-05-17",
+            "age":"222 DAYS 2 HOURS ",
+            "priority":null,
+            "caseStatus":"Closed",
+            "extensionStatus":"0",
+            "releaseDate":"22-12-17",
+            "href":"/cases/20171220000049"
+         }
+      ]
+   }
+}

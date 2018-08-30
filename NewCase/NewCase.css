@@ -1,0 +1,393 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.newCase {
+    font-family: var(--open-sans);
+    background: var(--color-gray-0);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    & .topMenu {
+        background: var(--color-white);
+        padding: 30px 16px 0 16px;
+        box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+        font-family: var(--open-sans);
+        position: relative;
+
+        & .backArrow {
+            display: inline-block;
+            margin-right: 5px;
+            position: relative;
+            top: -10px;
+            left: -5px;
+            
+            & .backIcon {
+                transform: rotate(180deg);
+                color: var(--color-seconday-turquoise);
+            }
+            
+            & .iconColor {
+                color: var(--color-seconday-turquoise);
+            }
+
+        }
+
+        & .newCaseTitle {
+            color: var(--color-seconday-turquoise);
+            display: inline-block;
+            position: relative;
+            top: -7px;
+            font: bold 24px var(--main-font);
+        }
+    }
+
+    & .newCaseBody {
+       padding: 16px 24px 16px 24px;
+       font-family: var(--open-sans);
+       background: var(--color-white);
+
+        & .newCaseInner {
+           width: 506px;
+
+            & .caseInnerTitle {
+                color: var(--color-gray-7);
+                margin-bottom: 16px;
+                font: bold 20px var(--main-font);
+            }
+
+            & .newCaseSearchBlock {
+                position: relative;
+
+            & span {
+                & input {
+                    margin: 0 0 16px 0;
+                    padding: 7px 43px 7px 12px;
+                    border-radius: 2px;
+                    background-color: var(--color-white);
+                    box-shadow: none;
+                    border: 1px solid var(--color-gray-3);
+                    width: 100%;
+                    font-size: 16px;
+                    color: var(--color-gray-7);
+                    margin-bottom: 8px;
+                    font-family: var(--open-sans);
+                    height: 40px;
+                    display: block;
+                    position: relative;
+                    width: 100%;
+                    pointer-events: none;
+
+                    &::placeholder { 
+                        font-style: italic; 
+                        color: var(--color-gray-7);
+                    }
+                }
+            }
+
+                & .searchIcon {
+                    position: absolute;
+                    right: 5px;
+                    top: 4px;
+                }
+           }
+
+           & .newCaseForm {
+                margin: 16px 0 16px;
+                font-family: var(--open-sans);
+
+                & label {
+                    color: var(--color-gray-7);
+                    font: bold 14px var(--open-sans);
+                }
+
+                & input {
+                    padding: 7px 12px;
+                    border-radius: 2px;
+                    box-shadow: none;
+                    border: 1px solid var(--color-gray-3);
+                    width: 100%;
+                    font-size: 16px;
+                    color: var(--color-gray-7);
+                    margin: 0 0 8px;
+                    font-family: var(--open-sans);
+                    height: 40px;
+                    display: block;
+                    width: 100%;
+
+                &::placeholder { 
+                    font-style: italic; 
+                    color: var(--color-gray-7);
+                }
+                
+            }
+
+                & .padLft0 {
+                    padding-left: 0; 
+                    padding-right: 12px;
+                }
+
+                & .padRgt0 {
+                    padding-left: 12px; 
+                    padding-right: 0;
+                }
+
+                & .padRgt24 {
+                    padding-right: 24px;
+                }
+
+                & .pad0 {
+                    padding-right: 0; 
+                    padding-left: 0;
+                }
+
+                & textarea {
+                    width: 100%;
+                    height: 96px;
+                    border-radius: 2px;
+                    border: 1px solid var(--color-gray-3);
+                    color: var(--color-gray-7);
+                    font-size: 16px;
+                    padding: 12px 12px;
+                    resize: none;
+
+                    &::placeholder { 
+                        font: italic 16px var(--open-sans);
+                        color: var(--color-gray-7);
+                    }
+                }
+               
+                & .newCaseBtn {
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-top: 15px;
+                    float: right;
+                    min-width: 176px;
+                    height: 40px;
+                    margin-left: 16px;
+                }
+
+                & .error {
+                    color: var(--color-primary-brand-red);
+                    font: 14px/24px var(--open-sans);
+                    margin-top: -5px;
+                }
+
+                & .active {
+                    & .defaultDisplay {
+                        font-style: normal;
+                        color: var(--color-gray-7);
+                    }
+                }
+
+                & .street {
+                    & input {
+                        width: 360px;
+                        margin-right: 24px;
+                    }
+                }
+
+                & .aptSuite {
+                    & input {
+                        width: 126px;
+                    }
+                }
+
+                & .zip {
+                    & input {
+                        margin-right: 24px;
+                    }
+                }
+
+                & .city {
+                    padding: 0 24px;
+                    & input {
+                        margin-right: 24px;
+                    }
+                }
+
+                & .state {
+                    & .dropdownTheme {
+                        width: 150%;
+                        left: 0;
+                    }
+                }
+            }
+
+           & label {
+                color: var(--color-gray-7);
+                &:before {
+                    border: 2px solid var(--color-seconday-turquoise);
+                    margin: 8px 16px 8px 0;
+                }
+            }
+            
+            & input[type='checkbox'] {
+                &:checked {
+                    & + label {
+                        &:before {
+                            background-color: var(--color-seconday-turquoise);
+                            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+                        }
+            
+                        &:after {
+                            border-color: var(--color-white);
+                            left: 9px;
+                        }
+                    }
+                }
+            }
+        }
+        & .clear {
+            clear: both;
+        }
+    }
+       
+& .state {
+
+    & .defaultDisplay {
+        width: 75%;
+        float: left;
+        padding-right: 0;
+    }
+}
+
+/*** Yoda Dropdown Style Start ***/
+    & .optionsTheme {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border-radius: 2px;
+        height: auto;
+        color: var(--color-gray-7);
+        font-style: normal;
+    }
+
+    & .tooltipWrapper {
+        width: 100%;
+        z-index: auto; 
+    }
+
+    & .disabled {
+        & input, & textarea, & button {
+            background: var(--color-gray-8);
+            cursor: not-allowed;
+            pointer-events: none;
+            height: 38px;
+        }
+    }
+
+    & .dropdown {
+        border: 1px solid var(--color-gray-3);
+        border-radius: 5px;
+        box-shadow: -1px 2px 5px var(--color-gray-3);
+        padding-left: 16px;
+        position: relative;
+        background-color: var(--color-white);
+        display: inline-block;
+        & select {
+            padding: 8px 50px 8px 0;
+        }
+    }
+
+    & .tooltipWrapper {
+        width: 100%;
+        z-index: auto;
+    }
+
+    & .dropdownTheme {
+        width: 100%;
+        text-align: left;
+        padding: 16px 0;
+    }
+
+    & .optionsTheme {
+        font: 16px var(--open-sans);
+    }
+
+    & .wrapper {
+        display: block;
+        margin-left: 0;
+        width: 100%;
+        border: solid 1px var(--color-gray-3);
+        border-radius: 2px;
+        height: 40px;
+        color: var(--color-gray-3);
+        font-style: italic;
+        z-index: auto;
+        margin-bottom: 8px;
+
+        &:after, &:before {
+            display: none;
+        }
+
+    }
+
+    & .tooltipContainer {
+        width: 100%;
+        z-index: auto;
+
+        & button {
+            width: 100%;
+            min-height: 38px;
+        }
+    }
+
+    & .defaultDisplay {
+        width: 84%;
+        padding: 0 16px;
+        font-size: 16px;
+    }
+
+    & .tooltip {
+        width: 100%;
+        text-align: left;
+    }
+
+    & .toolContent {
+        width: 100%;
+        text-align: left;
+    } 
+ 
+}
+
+.updateContent {
+
+    & .updateTitle {
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--color-gray-7);
+        font: bold 20px var(--main-font);
+    }
+
+    & .updateButtonBlock {
+        margin-bottom: 10px;
+    }
+
+    & .updateProceedBtn, & .updateCancelBtn {
+        display: inline-block;
+        width: 150px;
+        margin-right: 0;
+        border: 1px solid var(--color-seconday-turquoise); 
+    }
+
+    & .updateCancelBtn {
+        background: var(--color-white);
+        color: var(--color-gray-6);
+        margin-right: 17px;
+        border: 1px solid var(--color-gray-3);
+
+        &:hover {
+            background: var(--color-white);
+            color: var(--color-gray-6); 
+        }
+    }
+}
+
+.updatePopupModal {
+
+    & .storesTablet {
+        max-width: 352px;
+        padding: 5px 16px 14px;
+    }
+
+}

@@ -1,0 +1,37 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.caseLeft {
+    font-family: var(--open-sans);
+    padding: 8px 16px 0 11px;
+    float: left;
+    background: var(--color-gray-0);
+    height: calc(100vh - 122px);
+    overflow-y: auto;
+    width: 100%;
+
+    @media (--viewport-xl) {
+        height: calc(100vh - 122px);
+    }
+
+    & .caseSubTitle {
+        font: bold 14px/27px var(--open-sans);
+    }
+
+    & .caseDescription {
+        margin-bottom: 0px;
+        color: var(--color-solid-light-gray);
+        font: 16px/27px var(--open-sans);
+        word-wrap: break-word;
+
+            & a {
+                text-decoration: none;
+                font-weight: bold;
+                color: var(--color-seconday-turquoise);
+
+                &:hover {
+                    color: var(--color-seconday-turquoise); 
+                }
+            }
+        }
+   }

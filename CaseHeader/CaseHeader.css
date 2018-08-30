@@ -1,0 +1,58 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+
+.myCaseNotification {
+    font-family: var(--open-sans);
+    margin-top: -15px;
+    display: inline-block;
+    margin-left: 10px;
+
+    & ul.caseNotification {
+        padding: 0; 
+        margin: 0;
+        text-align: left;
+
+        & li {
+            display: inline-block;
+            padding: 0 30px;
+            position: relative;
+            text-align: center;
+            
+            & a {
+                text-decoration: none; 
+                color: var(--color-gray-5);
+
+                    & .notificationText {
+                        font-size: 12px; 
+                        color: var(--color-gray-5); 
+                        display: block;
+                    }
+
+                & .notification {
+                    padding: 0px 3px; 
+                    color: var(--color-white);
+                    text-align: center;
+                    font-size: 10px;
+                    font-weight: bold;
+                    background-color: var(--color-primary-brand-red);
+                    border-radius: 100%;
+                    position: absolute;
+                    top: -5px;
+                    right: 25px;
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+.newCaseBtn {
+    width: 176px;
+    position: relative;
+    top: -16px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: var(--main-font);
+    display: inline-block;
+}

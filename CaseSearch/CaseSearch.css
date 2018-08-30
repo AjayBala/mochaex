@@ -1,0 +1,512 @@
+@import 'fusion-core-components/lib/assets/styles/base/base.css';
+@import 'fusion-core-components/lib/assets/styles/grid/grid.css';
+@import 'react-datepicker/dist/react-datepicker.css';
+@import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+
+.myCase {
+    font-family: var(--open-sans);
+    background: var(--color-gray-0);
+    max-width: 1440px;
+    margin: 0 auto;
+
+    & .searchResultHeader {
+        background: var(--color-white);
+        padding: 20px 16px 10px 7px;
+        box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+        font-family: var(--open-sans);
+        position: relative;
+
+        & .searchResultInput {
+            font-size: 16px;
+            color: var(--color-gray-7);
+            position: relative;
+            border-bottom: 1px solid var(--color-gray-3);
+            padding: 0 30px 8px 0;
+            width: 100%;
+            font-family: var(--open-sans);
+        }
+
+        & .close {
+            position: absolute;
+            right: -7px;
+            top: -8px;
+        }
+        
+        & .group {
+            position: relative; 
+            display: inline-block; 
+            width: 88%; 
+            margin-top: 30px;
+        }
+        
+        & .error { 
+            color: var(--color-primary-brand-red);
+            margin-top: 5px; 
+            font: 14px var(--open-sans);    
+        }
+
+        & .searchErrorPosition {
+            margin-left: 20px;
+            padding-left: 27px;
+        }
+
+        & .backArrow {
+            display: inline-block; 
+            margin-right: 15px;
+
+            & .backIcon {
+                transform: rotate(180deg);
+                color: var(--color-seconday-turquoise);
+            }
+
+            & .iconColor {
+                color: var(--color-seconday-turquoise);
+            }
+        }
+
+        & .serachBtn {
+            width: 100%; 
+            padding: 10px 0;
+            margin-top: -10px;
+            font: 600 14px/18px var(--main-font);
+        }
+
+        & .dateRangeContain {
+            font-family: var(--open-sans);
+            float: right;
+
+            & .dategroup {
+                display: inline-block;
+                margin-right: 8px;
+
+                & .popperPosition {
+                    transform: translate3d(67px, 28px, 0px) !important; /* using !important to override the library inline style */
+                }
+
+                & .popperPositionIcon {
+                    transform: translate3d(-35px, 25px, 0px) !important; /* using !important to override the library inline style */
+                }
+
+            & .dateLabel {
+                color: var(--color-gray-6);
+                font: bold 14px var(--open-sans);
+            }
+
+            & .datePicker {
+                width: 141px;
+                height: 40px;
+                border-radius: 2px;
+                background-color: var(--color-white);
+                border: 1px solid var(--color-gray-3);
+                font-size: 16px;
+                padding: 7px 10px;
+                position: relative;
+
+                & .dateIcon {
+                    position: absolute;
+                    right: 5px;
+                    top: 3px;
+                }
+            }
+
+        }
+
+       & .applyBtn {
+           display: inline-block;
+           margin-left: 3px;
+           font-family: var(--main-font);
+           font-weight: bold;
+           font-size: 14px;
+           position: relative;
+           top: -3px;
+           width: 176px;
+       }
+
+    }
+
+    & .dateRangeWrapper {
+        padding-right: 0;
+    }
+
+    }
+
+    & .closeCircle {
+        fill:#55606a;
+    }
+    & .myCaseBody {
+        width: 100%;
+        padding: 16px 15px 16px 10px;
+        font-family: var(--open-sans);
+        min-height: calc(100vh - 141px);
+
+        & .titleContainer {
+            margin: 0px 0 10px;
+
+            & .title {
+                font-size: 24px;
+                font-weight: bold;
+                color: var(--color-light-black);
+                font-family: var(--main-font);
+
+                & .caseCount {
+                    margin-right: 8px;
+                }
+            }
+
+            & .filterLabel {
+                border-radius: 2px;
+                background-color: var(--color-white);
+                box-shadow: 0 1px 2px 0 rgba(83, 96, 107, 0.5);
+                border: solid 1px var(--color-gray-3);
+                padding: 0 8px 0 16px;
+                font-family: var(--open-sans);
+                display: inline-block;
+                margin: 0 8px 8px 0;
+                cursor: default;
+                
+                &:first-child {
+                    margin-left: 15px;
+                }
+
+                &:last-child {
+                    margin-right: 15px;
+                }
+
+                & .lableText {
+                    display: inline-block;
+                    font-size: 16px;
+                    color: var(--color-gray-7);
+                    font-weight: normal;
+                    position: relative;
+                    bottom: 4px;
+                }
+
+                & .lableClose {
+                    position: relative;
+                    bottom: 2px;
+                    & svg {
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+
+            & .clearFilter {
+                font-size: 16px;
+                font-weight: bold;
+                margin-left: 5px;
+                display: inline-block;
+
+                & a{
+                    color: var(--color-seconday-turquoise);
+                    text-decoration: none;
+                    
+                    &:hover{
+                        color: var(--color-seconday-turquoise);
+                    }
+                }
+            }
+            
+            & .filterTxt{
+                font-size: 16px;
+                font-weight: bold;
+                text-align: right;
+                color: var(--color-seconday-turquoise);
+                margin-top: 8px;
+                position: relative;
+                padding-right: 0;
+
+                & a{
+                    text-decoration: none;
+                    color: var(--color-seconday-turquoise);
+
+                    &:hover{
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+
+        & .tablePanelSearchContainer {
+            padding: 0;
+
+            & table {
+
+                & tr {
+                    background: var(--color-white);
+                    border-bottom: 1px solid var(--color-gray-8);
+
+                    &:nth-child(odd) {
+                        background-color: var(--color-white);
+                    }
+        
+                    &:nth-child(even) {
+                        background-color: var(--color-gray-0);
+                    }
+        
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    & th {
+                        padding: 3px 12px 3px 12px;
+                    }
+                    
+                    & td {
+                        padding: 12px 12px 12px 12px;
+                    }
+                }
+            }
+        }
+
+        & .tableContainer {
+            width: 100%;
+            padding: 0;
+
+            & table {
+                border-collapse: collapse;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                font-family: var(--open-sans);
+                border-radius: 3px;
+                background-color: var(--color-white);
+                box-shadow: 0 2px 4px 0 rgba(83, 96, 107, 0.16);
+                border: 1px solid var(--color-gray-8);
+
+                & tr {
+                    background: #f8f8f8;
+                    border-bottom: 1px solid var(--color-gray-8);
+
+                    &:nth-child(odd) {
+                        background-color: var(--color-white)
+                    }
+
+                    &:nth-child(even){
+                        background-color:rgba(241, 243, 244, 0.3);
+                    }
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                }
+
+                & th {
+                    font-size: 12px;
+                    color: var(--color-white);
+                    font-weight: bold;
+                    background-color: var(--color-gray-5);
+                    text-align: left;
+                    padding: 6px 12px;
+
+                    &:first-child {
+                        color: #a8e1ea; 
+                        font-weight: bold; 
+                        border-radius: 5px 0px 0 0;
+                    }
+
+                    &:last-child {
+                        border-radius: 0px 3px 0 0;
+                    }
+                }
+
+                & td {
+                    font-size: 16px;
+                    padding: 10px 12px;
+                    color: var(--color-gray-7);
+
+                    &:first-child {
+                        color: var(--color-seconday-turquoise); 
+                        font-weight: bold;
+                    }
+                } 
+            }
+        } 
+    }
+
+         & [class*="react-datepicker"] {
+             vertical-align: inherit;
+
+                & [class*="header"]{
+                    background: none !important;
+                    border: 0px !important;
+                    width: 100%;
+                    text-align: left;
+                }
+
+                & [class*='current-month'] {
+                    font-family: var(--main-font);
+                    color: var(--color-gray-6);
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 2.6;
+                    text-align: center;
+                    margin-left: 62px;
+                    color: var(--color-gray-7);
+                } 
+       
+                & [class*="month-container"] {
+                    float: none !important;
+                }
+
+                & [class*="navigation--previous"], 
+                & [class*="navigation--next"] {
+                    top: 28px;
+                }
+
+                & [class*="navigation--next"] {
+                    border-left-color: transparent;
+                    top: 21px;
+                    content: "<";
+                    font: 42px 'Consolas';
+                    font-weight: 900;
+                    display: inline-block;
+                    padding: 0.2em 0.2em 0.2em 0.2em;
+                    transform: rotate(135deg);
+                    box-shadow: 2px 2px 0 0px var(--color-seconday-turquoise) inset;
+                }
+
+                & [class*="navigation--previous"] {
+                    border-right-color: transparent;
+                    top: 21px;
+                    content: ">";
+                    font: 42px 'Consolas';
+                    font-weight: 900;
+                    transform: rotate(-45deg);
+                    display: inline-block;
+                    padding: 0.2em 0.2em 0.2em 0.2em;
+                    box-shadow: 2px 2px 0 0px var(--color-seconday-turquoise) inset;
+                }
+
+                & [class*="triangle"]{
+
+                    &:before{
+                        border-top: none;
+                    }
+                }
+
+                & [class*="day--keyboard-selected"],
+                & [class*="day--selected"] {
+                    border-radius: 20px;
+                    background-color: #cb0c0b;
+                    padding: 8px;
+                    width: 40px;
+                    height: 40px;
+                    color: #fff !important;
+                }
+
+                & [class*="time-name"] {
+                    margin: 7px 8px;
+                }
+
+                & [class*="day-names"],
+                & [class*="day"] {
+                    font-family: var(--main-font);
+                    font-weight: normal;
+                    line-height: 1.5;
+                    text-align: center;
+                    color: var(--color-gray-7);
+                }
+
+                & [class*="day-names"] {
+                    font-size: 16px;
+                }
+
+                & [class*="day"] {
+                    font-size: 14px;
+                    width: 34.2px;
+                    height: 35px;
+                    padding: 8px;
+                    
+                    &:hover {
+                        border-radius: 50%;
+                        background-color: #cb0c0b;
+                        color: var(--color-white);
+                        line-height: 1.5;
+                        padding: 8px;
+                    }
+
+                }
+
+                & input {
+                    color: var(--color-gray-6); 
+                    width: 100%;
+                    font: italic 16px/24px var(--open-sans);
+                    }
+
+                    & [class*="day-names"] {
+                        margin-left: 10px;
+
+                        & [class*="day-name"] {
+                        position: relative;
+                        top: -11px;
+                        left: -10px;
+                        }
+
+                        &:hover {
+                        color: var(--color-white);
+                        background: transparent;
+                        }
+                }
+                        & [class*="disabled"] {
+                            opacity: 0.3;
+
+                            &:hover {
+                                background: transparent;
+                                color: var(--color-gray-7);
+                            }
+                        }
+
+                        & [class*="outside-month"] {
+                            visibility: hidden;
+                        }
+} 
+
+        & [class*="react-datepicker-popper"] {
+
+            & [class*="react-datepicker__triangle"] {
+            border-bottom-color: var(--color-white);
+            }
+        }
+
+    
+    & .noResultFound {
+        text-align: center;
+        padding: 10% 0;
+        font-family: var(--open-sans);
+
+        & h1 {
+            color: var(--color-gray-5);
+            font-size: 25px;
+        }
+    } 
+    
+    & [class*=react-datepicker] input {
+        line-height: 24px;
+        color: var(--color-gray-6);
+    }
+    & .paginationDropdown {
+        border-radius: 2px;
+        box-shadow: 0 1px 2px 0 rgba(83,96,107,.5);
+        border: 1px solid var( --color-gray-3);
+        padding-right: 0;
+        background: var(--color-white);
+        height: 48px;
+        line-height: 43px;
+        width: 90px;
+        margin: 16px 10px 0;
+       }
+       
+       :global(.Pagination-dropdownTheme) {
+        width: 100%;
+        text-align: left;
+        max-height: 100px;
+        min-width: 90px;
+        left: -19px;
+        padding: 0px;
+    }
+}
+
+.priorityHigh {
+    color: var(--color-red);
+}
